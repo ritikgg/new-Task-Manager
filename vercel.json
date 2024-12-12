@@ -1,0 +1,15 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/projectimproved/$1"
+      }
+    ],
+    "builds": [
+      {
+        "src": "projectimproved/package.json",
+        "use": "@vercel/node"
+      }
+    ]
+  }
+  

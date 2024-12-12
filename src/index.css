@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+.custom-tabulator .tabulator {
+  @apply border-0 bg-white rounded-lg shadow-sm;
+  font-family: inherit;
+}
+
+.custom-tabulator .tabulator-header {
+  @apply bg-gray-50 border-b border-gray-200 rounded-t-lg;
+}
+
+.custom-tabulator .tabulator-header .tabulator-col {
+  @apply bg-transparent border-0 hover:bg-gray-100 transition-colors;
+}
+
+.custom-tabulator .tabulator-header .tabulator-col-content {
+  @apply px-6 py-4 font-semibold text-gray-700;
+}
+
+.custom-tabulator .tabulator-tableholder {
+  @apply bg-white;
+}
+
+.custom-tabulator .tabulator-row {
+  @apply border-b border-gray-100 hover:bg-blue-50/30 transition-colors;
+}
+
+.custom-tabulator .tabulator-row .tabulator-cell {
+  @apply px-6 py-4;
+}
+
+.custom-tabulator .tabulator-footer {
+  @apply bg-gray-50 border-t border-gray-200 rounded-b-lg;
+}
+
+.custom-tabulator .tabulator-paginator {
+  @apply p-3;
+}
+
+.custom-tabulator .tabulator-page {
+  @apply px-3 py-1.5 mx-1 rounded-md border border-gray-300 bg-white hover:bg-gray-50 text-sm transition-colors;
+}
+
+.custom-tabulator .tabulator-page.active {
+  @apply bg-blue-600 text-white border-blue-600 hover:bg-blue-700;
+}
+
+.custom-tabulator .tabulator-editing {
+  @apply bg-blue-50;
+}
+
+.delete-btn {
+  @apply p-1.5 rounded-full hover:bg-red-50 transition-colors;
+}
+
+.task-status {
+  @apply px-3 py-1.5 rounded-full text-sm font-medium inline-flex items-center gap-1.5;
+}
+
+.task-status-todo {
+  @apply bg-yellow-50 text-yellow-700 border border-yellow-200;
+}
+
+.task-status-progress {
+  @apply bg-blue-50 text-blue-700 border border-blue-200;
+}
+
+.task-status-done {
+  @apply bg-green-50 text-green-700 border border-green-200;
+}
