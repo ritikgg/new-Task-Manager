@@ -59,7 +59,7 @@ export const getTableColumns = (deleteTask: (id: number) => void): ColumnDefinit
         </svg>
       </button>
     `,
-    width: 70,
+    width: 100,
     hozAlign: 'center',
     cellClick: (e: any, cell: any) => {
       if (e.target.closest('.delete-btn')) {
